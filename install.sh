@@ -3,8 +3,10 @@ DEST_DIR=../dummy
 OVERWRITE_ALL=false
 for file in `find . -depth 1 -and -not -iname '.*'`; do 
   current_name=.`basename $file`;
+	if [ $current_name = ".README.rdoc" -o $current_name = ".install.sh" ]; then
+			continue
+	fi;
   should_link=true
-  # TODO handle excluded names
   if [ -e $DEST_DIR/$current_name ]; then
 			if [  $OVERWRITE_ALL == false  ]; then
 				should_link=false
