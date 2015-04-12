@@ -1,4 +1,4 @@
-#!env /bin/sh
+#!/usr/bin/env /bin/sh
 DEST_DIR=$HOME
 OVERWRITE_ALL=false
 for file in `find . -depth 1 -and -not -iname '.*'`; do 
