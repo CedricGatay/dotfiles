@@ -1,5 +1,5 @@
 #!env /bin/sh
-DEST_DIR=../dummy
+DEST_DIR=$HOME
 OVERWRITE_ALL=false
 for file in `find . -depth 1 -and -not -iname '.*'`; do 
   current_name=.`basename $file`;
