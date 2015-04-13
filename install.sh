@@ -1,7 +1,7 @@
 #!/usr/bin/env /bin/sh
 DEST_DIR=$HOME
 OVERWRITE_ALL=false
-for file in `find . -depth 1 -and -not -iname '.*'`; do 
+for file in `ls -1`; do 
   current_name=.`basename $file`;
 	if [ $current_name = ".README.rdoc" -o $current_name = ".install.sh" ]; then
 			continue
