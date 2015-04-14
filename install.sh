@@ -8,7 +8,7 @@ for file in `ls -1`; do
 	fi;
   should_link=true
   if [ -e $DEST_DIR/$current_name ]; then
-			if [  "$OVERWRITE_ALL" == "false"  ]; then
+			if [  "$OVERWRITE_ALL" = "false"  ]; then
 				should_link=false
 				read -p "Overwrite $current_name [ynaq]" ANSWER
 			  case $ANSWER in
@@ -26,7 +26,7 @@ for file in `ls -1`; do
 			fi;
 
   fi
-  if [ "$should_link" == "true" ]; then
+  if [ "$should_link" = "true" ]; then
 		ln -s -r -f  $file $DEST_DIR/$current_name
 		echo "Linking $current_name"
 	fi
