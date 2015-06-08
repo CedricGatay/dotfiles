@@ -31,3 +31,4 @@ for file in `ls -1`; do
 		echo "Linking $current_name"
 	fi
 done;
+mkdir -p ~/.vim/backups ~/.vim/swaps ~/.vim/undo
