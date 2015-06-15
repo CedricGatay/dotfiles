@@ -1,4 +1,4 @@
-Host gateway-fr *.priv.atos.fr
+Host gateway-fr *.priv.atos.fr 127.0.0.1
 	User a599566
 	ForwardAgent yes
 	ProxyCommand none
