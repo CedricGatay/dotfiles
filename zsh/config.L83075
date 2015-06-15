@@ -1,0 +1,24 @@
+#!/bin/zsh
+#
+PATH=/cygdrive/c/Javatools/sbt/bin:/cygdrive/c/javatools/java/jdk1.7.0_67/bin:/cygdrive/c/Javatools/maven-3.3.1/bin:/cygdrive/c/Javatools/tomcat-7.0.55/bin:$PATH
+#PATH=/cygdrive/c/Program\ Files/TortoiseHg/:$PATH
+PATH=/opt/jboss-as-7.1.1.Final/bin:$PATH
+PATH=/opt/spring-1.2.3.RELEASE/bin:$PATH
+PATH=/cygdrive/c/Program\ Files/Boot2Docker\ for\ Windows/:$PATH
+PATH=/cygdrive/c/Program\ Files\ \(x86\)/nodejs:$PATH
+PATH=/cygdrive/c/Program\ Files/Oracle/VirtualBox:$PATH
+PATH=/cygdrive/c/HashiCorp/Vagrant/bin:$PATH
+PATH=/opt/packer/:$PATH
+#PATH=/cygdrive/c/ProgramData/chocolatey/bin:$PATH
+export VISUAL=/usr/bin/vim
+export JAVA_HOME=c:/javatools/java/jdk1.7.0_67
+export JAVA_HOME_8=c:/javatools/java/jdk1.8.0_11
+CYGWIN="$CYGWIN winsymlinks:native"
+export CYGWIN
+export SBT_OPTS="-Dhttp.proxyHost=proxy -Dhttp.proxyPort=3128 -Dhttps.proxyHost=proxy -Dhttps.proxyPort=3128 -Dhttps.nonProxyHosts=*.priv.atos.fr -Dhttp.nonProxyHosts=*.priv.atos.fr"
+# ssh-pageant
+eval $(/usr/local/bin/ssh-pageant -r -a "/tmp/.ssh-pageant-$USERNAME")
+alias dssh='ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null docker@$(boot2docker ip)'
+export DOCKER_HOST=tcp://192.168.91.10:4243
+export no_proxy=localhost,.priv.atos.fr,192.168.91.10
+
