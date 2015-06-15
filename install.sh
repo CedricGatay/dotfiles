@@ -1,9 +1,10 @@
 #!/usr/bin/env /bin/sh
+HOST=`hostname -s`
 DEST_DIR=$HOME
 OVERWRITE_ALL=false
 for file in `ls -1`; do 
   current_name=.`basename $file`;
-	if [ $current_name = ".README.rdoc" -o $current_name = ".install.sh" ]; then
+	if [ $current_name = ".README.rdoc" -o $current_name = ".install.sh" -o $current_name = ".hosts" ]; then
 			continue
 	fi;
   should_link=true
@@ -31,4 +32,7 @@ for file in `ls -1`; do
 		echo "Linking $current_name"
 	fi
 done;
+if [ -d hosts/$HOST ]; then
+				ln -s -r -f hosts/$HOST $DEST_DIR/.host
+fi
 mkdir -p ~/.vim/backups ~/.vim/swaps ~/.vim/undo

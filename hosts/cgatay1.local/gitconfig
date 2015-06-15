@@ -1,0 +1,27 @@
+[user]
+	email = cedric@gatay.fr
+	name = Cedric Gatay
+
+
+[mergetool "diffmerge"]
+	cmd = diffmerge --merge\n--result=$MERGED $LOCAL $BASE $REMOTE
+	trustExitCode = true
+[merge]
+	tool = diffmerge
+[mergetool]
+	keepBackup = false
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[credential]
+	helper = osxkeychain
+
+[achievement]
+	upload = true
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
