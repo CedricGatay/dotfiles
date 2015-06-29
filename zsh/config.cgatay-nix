@@ -1,0 +1,4 @@
+#!/bin/bash
+export http_proxy=proxy-internet.localnet:3128
+export https_proxy=$http_proxy
+export ftp_proxy=$http_proxy

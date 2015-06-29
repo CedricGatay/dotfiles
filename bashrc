@@ -277,7 +277,6 @@ function load_prompt () {
 }
 PATH=/Users/cgatay/android-sdk-mac_86/1.4-liquid-superboot:/Users/cgatay/android-sdk-mac_86/tools:/Users/cgatay/android-sdk-mac_86/platform-tools:/Users/cgatay/bin:/Users/cgatay/Documents/SRMvision/scripts:/opt/subversion/bin:/usr/local/git/bin:/opt/glassfishv3/glassfish/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/usr/local/bin:/opt/apache-maven-3.0.2/bin:$PATH
 export PATH 
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home 
 load_prompt
 
 if [ -f /opt/local/etc/bash_completion ]; then
