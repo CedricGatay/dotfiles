@@ -1,0 +1,11 @@
+git
+zsh
+coreutils
+docker
+caskroom/cask/brew-cask
+wget
+curl
+node
+tmux
+maven
+gnu-sed --default-names
