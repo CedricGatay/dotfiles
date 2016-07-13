@@ -1,0 +1,9 @@
+alias ws='cd /Users/cgatay/Documents/work'
+alias mvnci="mvn clean install"
+alias mvni="mvn install"
+alias mvncis="mvn clean install -Dmaven.test.skip=true"
+alias mvnis="mvn install -Dmaven.test.skip=true"
+alias run="ct run"
+alias dbg="ct debug"
+eval "$(jenv init -)"
+. `brew --prefix`/etc/profile.d/z.sh

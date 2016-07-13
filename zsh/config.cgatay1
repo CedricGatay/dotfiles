@@ -1,0 +1,10 @@
+PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+#Common paths
+PATH=~/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:$PATH
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+#NPM paths
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+#jEnv
+PATH="$HOME/.jenv/bin:$PATH"
+export PATH;
+export MANPATH;

@@ -6,6 +6,7 @@
 # Ubuntu: /etc/zsh/newuser.zshrc.recommended
 
 source ~/.zsh/config.common
+HOST=$(hostname -s)
 # we source host specific config
 if [ -f ~/.zsh/config.${HOST} ]; then
   source ~/.zsh/config.${HOST};
