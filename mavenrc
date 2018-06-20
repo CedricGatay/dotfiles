@@ -1,1 +1,1 @@
-export MAVEN_OPTS="$MAVEN_OPTS -Dfile.encoding=UTF-8 -Xmx1536m -Xms512m -XX:MaxPermSize=1536M"
+export MAVEN_OPTS="$MAVEN_OPTS -Dfile.encoding=UTF-8 -Xmx1536m -Xms512m"

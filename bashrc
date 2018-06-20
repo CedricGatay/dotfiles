@@ -325,3 +325,7 @@ export GRAILS_HOME
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 [[ -s "/Users/cgatay/.gvm/bin/gvm-init.sh" && -z $(which gvm-init.sh | grep '/gvm-init.sh') ]] && source "/Users/cgatay/.gvm/bin/gvm-init.sh"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/cgatay/.sdkman"
+[[ -s "/Users/cgatay/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/cgatay/.sdkman/bin/sdkman-init.sh"

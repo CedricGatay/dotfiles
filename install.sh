@@ -34,5 +34,9 @@ for file in `ls -1`; do
 done;
 if [ -d hosts/$HOST ]; then
 				ln -s -r -f hosts/$HOST $DEST_DIR/.host
+				if [ -f $DEST_DIR/.host/install.sh ]; then
+						echo "Running custom install script";
+						sh $DEST_DIR/.host/install.sh
+				fi
 fi
 mkdir -p ~/.vim/backups ~/.vim/swaps ~/.vim/undo

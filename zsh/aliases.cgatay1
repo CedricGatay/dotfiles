@@ -5,5 +5,6 @@ alias mvncis="mvn clean install -Dmaven.test.skip=true"
 alias mvnis="mvn install -Dmaven.test.skip=true"
 alias run="ct run"
 alias dbg="ct debug"
-eval "$(jenv init -)"
-. `brew --prefix`/etc/profile.d/z.sh
+eval "$(jenv init - --no-rehash)"
+(jenv rehash &) 2> /dev/null
+#. `brew --prefix`/etc/profile.d/z.sh

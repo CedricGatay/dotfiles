@@ -1,2 +1,0 @@
-alias log='log4tail /home/glassfish/glassfish/domains/domain1/logs/server.log'
-

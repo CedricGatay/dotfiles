@@ -63,6 +63,8 @@ export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='3;33' #'1;32'
 export LESS='--ignore-case --raw-control-chars'
 export PAGER=less
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 
 # Display current path in title bar
