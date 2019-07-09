@@ -52,7 +52,7 @@ COMPLETION_WAITING_DOTS="true"
 # /!\ do not use with zsh-autosuggestions
 
 #plugins=(osx mvn gradle scala java abs docker docker-compose gem grunt gulp nvm npm yarn pod rsync rvm z k tig gitfast colored-man colorize command-not-found cp dirhistory autojump sudo zsh-syntax-highlighting)
-plugins=(osx mvn gradle scala java docker docker-compose gem grunt npm yarn pod rsync z k gitfast colored-man colorize cp dirhistory sudo zsh-syntax-highlighting)
+plugins=(osx mvn gradle scala docker docker-compose gem grunt npm yarn pod rsync z gitfast  colorize cp dirhistory sudo)
 # /!\ zsh-syntax-highlighting and then zsh-autosuggestions must be at the end
 
 export ZSH=/Users/cgatay/.oh-my-zsh
@@ -93,9 +93,10 @@ if test -f ~/.gnupg/.gpg-agent-info -a -n "$(pgrep gpg-agent)"; then
   source ~/.gnupg/.gpg-agent-info
   export GPG_AGENT_INFO
 else
-  eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
+  eval $(gpg-agent --daemon 2>/dev/null)
 fi
 
 eval "$(rbenv init -)"
 source ~/.sdkman/bin/sdkman-init.sh
-source /usr/local/bin/sandboxd
+source ~/.nvm/nvm.sh
+#source /usr/local/bin/sandboxd

@@ -17,3 +17,6 @@ source ~/.zsh/aliases.common
 if [ -f ~/.zsh/aliases.${HOST} ]; then
   source ~/.zsh/aliases.${HOST};
 fi
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+[[ -f /Users/cgatay/Documents/work/github/browserosaurus/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/cgatay/Documents/work/github/browserosaurus/node_modules/tabtab/.completions/electron-forge.zsh
